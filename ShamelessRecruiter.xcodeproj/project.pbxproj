@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC7FCE871CFF73A70000C037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCE861CFF73A70000C037 /* AppDelegate.swift */; };
+		EC7FCE891CFF73A70000C037 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCE881CFF73A70000C037 /* ViewController.swift */; };
+		EC7FCE8C1CFF73A70000C037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCE8A1CFF73A70000C037 /* Main.storyboard */; };
+		EC7FCE8F1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCE8D1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld */; };
+		EC7FCE911CFF73A70000C037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCE901CFF73A70000C037 /* Assets.xcassets */; };
+		EC7FCE941CFF73A70000C037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCE921CFF73A70000C037 /* LaunchScreen.storyboard */; };
+		EC7FCE9F1CFF73A70000C037 /* ShamelessRecruiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCE9E1CFF73A70000C037 /* ShamelessRecruiterTests.swift */; };
+		EC7FCEAA1CFF73A70000C037 /* ShamelessRecruiterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCEA91CFF73A70000C037 /* ShamelessRecruiterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC7FCE9B1CFF73A70000C037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7FCE7B1CFF73A70000C037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7FCE821CFF73A70000C037;
+			remoteInfo = ShamelessRecruiter;
+		};
+		EC7FCEA61CFF73A70000C037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7FCE7B1CFF73A70000C037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7FCE821CFF73A70000C037;
+			remoteInfo = ShamelessRecruiter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC7FCE831CFF73A70000C037 /* ShamelessRecruiter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShamelessRecruiter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7FCE861CFF73A70000C037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC7FCE881CFF73A70000C037 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC7FCE8B1CFF73A70000C037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC7FCE8E1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShamelessRecruiter.xcdatamodel; sourceTree = "<group>"; };
+		EC7FCE901CFF73A70000C037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC7FCE931CFF73A70000C037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC7FCE951CFF73A70000C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7FCE9A1CFF73A70000C037 /* ShamelessRecruiterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamelessRecruiterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7FCE9E1CFF73A70000C037 /* ShamelessRecruiterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamelessRecruiterTests.swift; sourceTree = "<group>"; };
+		EC7FCEA01CFF73A70000C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7FCEA51CFF73A70000C037 /* ShamelessRecruiterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamelessRecruiterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7FCEA91CFF73A70000C037 /* ShamelessRecruiterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamelessRecruiterUITests.swift; sourceTree = "<group>"; };
+		EC7FCEAB1CFF73A70000C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC7FCE801CFF73A70000C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7FCE971CFF73A70000C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7FCEA21CFF73A70000C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC7FCE7A1CFF73A70000C037 = {
+			isa = PBXGroup;
+			children = (
+				EC7FCE851CFF73A70000C037 /* ShamelessRecruiter */,
+				EC7FCE9D1CFF73A70000C037 /* ShamelessRecruiterTests */,
+				EC7FCEA81CFF73A70000C037 /* ShamelessRecruiterUITests */,
+				EC7FCE841CFF73A70000C037 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC7FCE841CFF73A70000C037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCE831CFF73A70000C037 /* ShamelessRecruiter.app */,
+				EC7FCE9A1CFF73A70000C037 /* ShamelessRecruiterTests.xctest */,
+				EC7FCEA51CFF73A70000C037 /* ShamelessRecruiterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC7FCE851CFF73A70000C037 /* ShamelessRecruiter */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCE861CFF73A70000C037 /* AppDelegate.swift */,
+				EC7FCE881CFF73A70000C037 /* ViewController.swift */,
+				EC7FCE8A1CFF73A70000C037 /* Main.storyboard */,
+				EC7FCE901CFF73A70000C037 /* Assets.xcassets */,
+				EC7FCE921CFF73A70000C037 /* LaunchScreen.storyboard */,
+				EC7FCE951CFF73A70000C037 /* Info.plist */,
+				EC7FCE8D1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld */,
+			);
+			path = ShamelessRecruiter;
+			sourceTree = "<group>";
+		};
+		EC7FCE9D1CFF73A70000C037 /* ShamelessRecruiterTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCE9E1CFF73A70000C037 /* ShamelessRecruiterTests.swift */,
+				EC7FCEA01CFF73A70000C037 /* Info.plist */,
+			);
+			path = ShamelessRecruiterTests;
+			sourceTree = "<group>";
+		};
+		EC7FCEA81CFF73A70000C037 /* ShamelessRecruiterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCEA91CFF73A70000C037 /* ShamelessRecruiterUITests.swift */,
+				EC7FCEAB1CFF73A70000C037 /* Info.plist */,
+			);
+			path = ShamelessRecruiterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC7FCE821CFF73A70000C037 /* ShamelessRecruiter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7FCEAE1CFF73A70000C037 /* Build configuration list for PBXNativeTarget "ShamelessRecruiter" */;
+			buildPhases = (
+				EC7FCE7F1CFF73A70000C037 /* Sources */,
+				EC7FCE801CFF73A70000C037 /* Frameworks */,
+				EC7FCE811CFF73A70000C037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShamelessRecruiter;
+			productName = ShamelessRecruiter;
+			productReference = EC7FCE831CFF73A70000C037 /* ShamelessRecruiter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC7FCE991CFF73A70000C037 /* ShamelessRecruiterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7FCEB11CFF73A70000C037 /* Build configuration list for PBXNativeTarget "ShamelessRecruiterTests" */;
+			buildPhases = (
+				EC7FCE961CFF73A70000C037 /* Sources */,
+				EC7FCE971CFF73A70000C037 /* Frameworks */,
+				EC7FCE981CFF73A70000C037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7FCE9C1CFF73A70000C037 /* PBXTargetDependency */,
+			);
+			name = ShamelessRecruiterTests;
+			productName = ShamelessRecruiterTests;
+			productReference = EC7FCE9A1CFF73A70000C037 /* ShamelessRecruiterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC7FCEA41CFF73A70000C037 /* ShamelessRecruiterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7FCEB41CFF73A70000C037 /* Build configuration list for PBXNativeTarget "ShamelessRecruiterUITests" */;
+			buildPhases = (
+				EC7FCEA11CFF73A70000C037 /* Sources */,
+				EC7FCEA21CFF73A70000C037 /* Frameworks */,
+				EC7FCEA31CFF73A70000C037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7FCEA71CFF73A70000C037 /* PBXTargetDependency */,
+			);
+			name = ShamelessRecruiterUITests;
+			productName = ShamelessRecruiterUITests;
+			productReference = EC7FCEA51CFF73A70000C037 /* ShamelessRecruiterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC7FCE7B1CFF73A70000C037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = agenteo;
+				TargetAttributes = {
+					EC7FCE821CFF73A70000C037 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EC7FCE991CFF73A70000C037 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EC7FCE821CFF73A70000C037;
+					};
+					EC7FCEA41CFF73A70000C037 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EC7FCE821CFF73A70000C037;
+					};
+				};
+			};
+			buildConfigurationList = EC7FCE7E1CFF73A70000C037 /* Build configuration list for PBXProject "ShamelessRecruiter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC7FCE7A1CFF73A70000C037;
+			productRefGroup = EC7FCE841CFF73A70000C037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC7FCE821CFF73A70000C037 /* ShamelessRecruiter */,
+				EC7FCE991CFF73A70000C037 /* ShamelessRecruiterTests */,
+				EC7FCEA41CFF73A70000C037 /* ShamelessRecruiterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC7FCE811CFF73A70000C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7FCE941CFF73A70000C037 /* LaunchScreen.storyboard in Resources */,
+				EC7FCE911CFF73A70000C037 /* Assets.xcassets in Resources */,
+				EC7FCE8C1CFF73A70000C037 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7FCE981CFF73A70000C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7FCEA31CFF73A70000C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC7FCE7F1CFF73A70000C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7FCE891CFF73A70000C037 /* ViewController.swift in Sources */,
+				EC7FCE871CFF73A70000C037 /* AppDelegate.swift in Sources */,
+				EC7FCE8F1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7FCE961CFF73A70000C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7FCE9F1CFF73A70000C037 /* ShamelessRecruiterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7FCEA11CFF73A70000C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7FCEAA1CFF73A70000C037 /* ShamelessRecruiterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC7FCE9C1CFF73A70000C037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7FCE821CFF73A70000C037 /* ShamelessRecruiter */;
+			targetProxy = EC7FCE9B1CFF73A70000C037 /* PBXContainerItemProxy */;
+		};
+		EC7FCEA71CFF73A70000C037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7FCE821CFF73A70000C037 /* ShamelessRecruiter */;
+			targetProxy = EC7FCEA61CFF73A70000C037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC7FCE8A1CFF73A70000C037 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7FCE8B1CFF73A70000C037 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC7FCE921CFF73A70000C037 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7FCE931CFF73A70000C037 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC7FCEAC1CFF73A70000C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC7FCEAD1CFF73A70000C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC7FCEAF1CFF73A70000C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShamelessRecruiter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teotti.ShamelessRecruiter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC7FCEB01CFF73A70000C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShamelessRecruiter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teotti.ShamelessRecruiter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC7FCEB21CFF73A70000C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShamelessRecruiterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teotti.ShamelessRecruiterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShamelessRecruiter.app/ShamelessRecruiter";
+			};
+			name = Debug;
+		};
+		EC7FCEB31CFF73A70000C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShamelessRecruiterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teotti.ShamelessRecruiterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShamelessRecruiter.app/ShamelessRecruiter";
+			};
+			name = Release;
+		};
+		EC7FCEB51CFF73A70000C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShamelessRecruiterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teotti.ShamelessRecruiterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShamelessRecruiter;
+			};
+			name = Debug;
+		};
+		EC7FCEB61CFF73A70000C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShamelessRecruiterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teotti.ShamelessRecruiterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShamelessRecruiter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC7FCE7E1CFF73A70000C037 /* Build configuration list for PBXProject "ShamelessRecruiter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7FCEAC1CFF73A70000C037 /* Debug */,
+				EC7FCEAD1CFF73A70000C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7FCEAE1CFF73A70000C037 /* Build configuration list for PBXNativeTarget "ShamelessRecruiter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7FCEAF1CFF73A70000C037 /* Debug */,
+				EC7FCEB01CFF73A70000C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC7FCEB11CFF73A70000C037 /* Build configuration list for PBXNativeTarget "ShamelessRecruiterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7FCEB21CFF73A70000C037 /* Debug */,
+				EC7FCEB31CFF73A70000C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC7FCEB41CFF73A70000C037 /* Build configuration list for PBXNativeTarget "ShamelessRecruiterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7FCEB51CFF73A70000C037 /* Debug */,
+				EC7FCEB61CFF73A70000C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC7FCE8D1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC7FCE8E1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodel */,
+			);
+			currentVersion = EC7FCE8E1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodel */;
+			path = ShamelessRecruiter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC7FCE7B1CFF73A70000C037 /* Project object */;
+}
