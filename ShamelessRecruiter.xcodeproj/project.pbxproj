@@ -15,6 +15,8 @@
 		EC7FCE941CFF73A70000C037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCE921CFF73A70000C037 /* LaunchScreen.storyboard */; };
 		EC7FCE9F1CFF73A70000C037 /* ShamelessRecruiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCE9E1CFF73A70000C037 /* ShamelessRecruiterTests.swift */; };
 		EC7FCEAA1CFF73A70000C037 /* ShamelessRecruiterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCEA91CFF73A70000C037 /* ShamelessRecruiterUITests.swift */; };
+		EC7FCEBA1CFF95DB0000C037 /* ReportRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCEB91CFF95DB0000C037 /* ReportRecruiterViewController.swift */; };
+		EC7FCEBC1CFF9D940000C037 /* RecruiterReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCEBB1CFF9D940000C037 /* RecruiterReport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EC7FCEA51CFF73A70000C037 /* ShamelessRecruiterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamelessRecruiterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7FCEA91CFF73A70000C037 /* ShamelessRecruiterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamelessRecruiterUITests.swift; sourceTree = "<group>"; };
 		EC7FCEAB1CFF73A70000C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7FCEB91CFF95DB0000C037 /* ReportRecruiterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportRecruiterViewController.swift; sourceTree = "<group>"; };
+		EC7FCEBB1CFF9D940000C037 /* RecruiterReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecruiterReport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				EC7FCE921CFF73A70000C037 /* LaunchScreen.storyboard */,
 				EC7FCE951CFF73A70000C037 /* Info.plist */,
 				EC7FCE8D1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld */,
+				EC7FCEB91CFF95DB0000C037 /* ReportRecruiterViewController.swift */,
+				EC7FCEBB1CFF9D940000C037 /* RecruiterReport.swift */,
 			);
 			path = ShamelessRecruiter;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7FCEBA1CFF95DB0000C037 /* ReportRecruiterViewController.swift in Sources */,
+				EC7FCEBC1CFF9D940000C037 /* RecruiterReport.swift in Sources */,
 				EC7FCE891CFF73A70000C037 /* ViewController.swift in Sources */,
 				EC7FCE871CFF73A70000C037 /* AppDelegate.swift in Sources */,
 				EC7FCE8F1CFF73A70000C037 /* ShamelessRecruiter.xcdatamodeld in Sources */,
