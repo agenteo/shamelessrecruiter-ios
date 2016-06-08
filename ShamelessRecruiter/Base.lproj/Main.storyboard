@@ -40,9 +40,6 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="nameTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="prs-3P-dIL"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The recruiter email." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahN-9T-ei5">
                                 <rect key="frame" x="20" y="215" width="342" height="30"/>
@@ -72,6 +69,12 @@
                                     <action selector="reportRecruiter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHJ-md-9Pp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="submission result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWB-J0-vu1">
+                                <rect key="frame" x="125" y="527" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.68072019585153665" blue="0.83473085732984287" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -81,6 +84,7 @@
                         <outlet property="messageField" destination="LMb-OJ-Bkf" id="MOp-Gg-BZ4"/>
                         <outlet property="nameField" destination="YQC-XD-VJN" id="g5I-gv-Mhx"/>
                         <outlet property="reportRecruiterButton" destination="sYQ-rM-Prq" id="kSP-lr-bhC"/>
+                        <outlet property="submissionResultLabel" destination="dWB-J0-vu1" id="ZTK-2N-wTs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

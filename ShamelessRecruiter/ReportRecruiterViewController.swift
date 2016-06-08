@@ -15,18 +15,36 @@ class ReportRecruiterViewController: UIViewController{
     
     @IBOutlet weak var reportRecruiterButton: UIButton!
     
+    @IBOutlet weak var submissionResultLabel: UILabel!
+    
     var report: RecruiterReport!
     
     override func viewWillAppear(animated: Bool) {
+        submissionResultLabel.hidden = true
         super.viewWillAppear(animated)
     }
 
+    
    
     @IBAction func reportRecruiter(sender: AnyObject){
         print("DEBUG: report submit clicked")
-        
-        var result = report.submitReport(nameField.text!,
+        print(nameField.text!);
+        report.submitReport(nameField.text!,
                             email: emailField.text!,
-                            message: messageField.text!);
+                            message: messageField.text!){
+        responseData, error in
+                                guard responseData != nil else{
+                                    print("Problem with the submission")
+                                    print(responseData)
+                                    print(error)
+                                    self.submissionResultLabel.text = "Failed... ensure fields are filled in."
+                                    self.submissionResultLabel.hidden = false
+                                    return
+                                }
+                                print("submission done")
+                                print(responseData)
+                                self.submissionResultLabel.text = "Success!"
+                                self.submissionResultLabel.hidden = false
+        };
     }
 }

@@ -13,7 +13,9 @@ class RecruiterReport{
         return NSURLSession(configuration: config)
     }()
     
-    func submitReport(name: String, email: String, message: String){
+    func submitReport(name: String, email: String, message: String,
+                      completionHandler: (NSDictionary?, NSError?) -> ()
+        ) -> NSURLSessionTask {
         print("DEBUG: submit report called")
         
         let url = NSURL(string: "http://localhost:8080/api/reportRecruiter")!
@@ -21,6 +23,7 @@ class RecruiterReport{
         
         // prepare json data
         let json = [ "name": name, "email": email, "message": message ]
+        
         do{
             let jsonData = try NSJSONSerialization.dataWithJSONObject(json, options: .PrettyPrinted)
             request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
@@ -28,25 +31,44 @@ class RecruiterReport{
             request.HTTPBody = jsonData
         }
         catch{
+            print("ERROR: in json conversion")
             print(error)
         }
-    
         
+        // TODO: check how NSURLSession.sharedSession() is different
         let task = session.dataTaskWithRequest(request) {
-            (data, response, error) -> Void in
-            if let jsonData = data {
-                if let jsonString = NSString(data: jsonData,
-                                             encoding: NSUTF8StringEncoding){
-                    print(jsonString)
+            (data, response, error) in dispatch_async(dispatch_get_main_queue()){
+                if let httpResponse = response as? NSHTTPURLResponse {
+                    switch(httpResponse.statusCode) {
+                    case 200: //success
+                        do {
+                            var json: NSDictionary!
+                            
+                            do {
+                                json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as! NSDictionary
+//                                let nsData = NSKeyedArchiver.archivedDataWithRootObject(json)
+                                completionHandler(json, nil)
+                            } catch {
+                                print(error)
+                            }
+                        }
+                        catch(let jsonConversionFailedMessage){
+                            print("DEBUG: json response conversion fail \(jsonConversionFailedMessage) coins.")
+                            completionHandler(nil, error)
+                        }
+                    default:
+                        print("POST Request unsuccessful. HTTP Status Code: \(httpResponse.statusCode)")
+                        completionHandler(nil, error)
+                    }
+                } else {
+                    print("Not a valid http response. NetworkOperation:downloadJSONFromURL()")
+                    completionHandler(nil, error)
                 }
             }
-            else if let requestError = error {
-                print("DEBUG: Error submitting report: \(requestError)")
-            }
-            else{
-                print("DEBUG: Unexpected error with the request")
-            }
         }
+        
         task.resume()
+        
+        return task
     }
 }
